@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Css-Variables */
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Body-Section */
+
+body {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--Light-Gray);
+}
+
+/* Container-Section */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    box-shadow: 0.5px 0.5px 5px #aaaaaa;
+    border-radius: 5px;
+}
+.container .header{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.container .header h1 {
+    padding: 1rem 0rem;
+    color: var(--Cyan);
+    font-size: 2rem;
+}
+.container .header h2 {
+   color: var(--Bright-Yellow);
+}
+
+.container .header p {
+    color: var(--Grayish-Blue);
+}
+
+/* Cards-Section */
+
+.container .cards {
+    display: flex;
+    
+}
+
+.container .card1 {
+   background-color: var(--Cyan);
+   width: 50%;
+   padding: 2rem;
+   border-radius: 0px 0px 0px 5px;
+}
+.container .card1 h3 {
+   font-size: 2.5rem;
+   color: white;
+   padding-top: 1.5rem;
+   
+}
+
+.container .card1 p {
+    padding-top: 0.4rem;
+}
+
+.container .card1 h3 span {
+  font-size: 1rem;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+}
+
+.container .card2 {
+    background-color: rgb(27, 197, 197);
+    width: 50%;
+    padding: 2rem;
+    border-radius: 0px 0px 5px 0px;
+}
+
+/* Utility-Section */
+
+button {
+    background-color: var(--Bright-Yellow);
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 85%;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.h-primary {
+   color: white;
+}
+.p-primary {
+  padding: 2rem 2rem 2rem 0rem;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+
+@media screen and (max-width:500px) {
+    
+   .container {
+       margin: 2rem;
+   }
+    .container .cards {
+        flex-direction: column;
+    }
+    .container .card1 {
+        width: 100%;
+    }
+    .container .card2 {
+        width: 100%;
+    }
+
+}
